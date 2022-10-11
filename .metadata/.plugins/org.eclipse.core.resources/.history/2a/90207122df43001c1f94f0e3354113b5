@@ -1,0 +1,14 @@
+import java.util.HashMap;
+
+public class HashMapDriver {
+   public static void main(String[] args) {
+	
+	   HashMap<Integer, Sehir> hashMap =new HashMap<>();
+	   hashMap.put(34,new Sehir("istanbul", 16000000));
+	   hashMap.put(35,new Sehir("izmir", 4000000));
+	   hashMap.put(6,new Sehir("ankara", 6000000));
+	   hashMap.put(58,new Sehir("sivas", 300000));
+	   System.out.println(hashMap.size());
+	   hashMap.get(58); // değer olarak sehir nesnesini döndürür
+}
+}

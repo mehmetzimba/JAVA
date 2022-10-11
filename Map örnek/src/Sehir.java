@@ -1,0 +1,46 @@
+import java.io.Serializable;
+
+public class Sehir implements Serializable {
+	private String isim;
+	private long nufus;
+	public Sehir() {
+			}
+    public Sehir(String isim,long nufus) {
+	this.isim=isim;
+	this.nufus=nufus;
+}
+
+ public String getIsim() {
+	return isim;
+}
+ public long getNufus() {
+	return nufus;
+}
+ public void setIsim(String isim) {
+	this.isim = isim;
+}
+ public void setNufus(long nufus) {
+	this.nufus = nufus;
+}
+@Override
+public String toString() {
+	// TODO Auto-generated method stub
+	return "isim  :"+isim+",     nüfus  :"+nufus;
+} 
+@Override
+public int hashCode() {
+	// TODO Auto-generated method stub
+	return isim.hashCode();
+}
+
+@Override
+public boolean equals(Object o) {
+	// TODO Auto-generated method stub
+	Sehir sehir=(Sehir)o;
+	return sehir.isim.equals(this.isim);
+}
+
+
+
+
+}

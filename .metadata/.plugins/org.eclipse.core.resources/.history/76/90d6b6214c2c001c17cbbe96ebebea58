@@ -1,0 +1,16 @@
+package kalıtım;
+
+public class Driver {
+	public static void main(String[] args) {
+		Sekil sekil= new Sekil();
+		Kare kare=new Kare();
+		kare.setPosX(10);
+		kare.setRenk("sarı");
+		kare.setPosY(4);
+		kare.setKenarUzunluğu(7);
+		System.out.println(kare.getKenarUzunluğu());
+		
+		
+	}
+
+}

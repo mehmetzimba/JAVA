@@ -1,0 +1,13 @@
+import java.util.LinkedList;
+
+public class Driver {
+public static void main(String[] args) {
+	LinkedList<Integer>  integers =new LinkedList<>();
+	integers.add(1);
+	integers.add(0);
+	integers.add(6);
+	int x=integers.get(2); // 0. index=1 ,1. index =0 ,2. index=6
+	System.out.println(x);
+	System.out.println(integers.size());
+}
+}

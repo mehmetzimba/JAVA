@@ -1,0 +1,14 @@
+import java.util.HashMap;
+
+public class Driver {
+public static void main(String[] args) {
+	HashMap<Integer,String> hashMap =new HashMap<>();
+	hashMap.put(34, "İSTANBUL");
+	hashMap.put(35, "İZMİR");
+	hashMap.put(6, "ANKARA");
+	System.out.println(hashMap.get(34));
+	
+	
+	
+}
+}

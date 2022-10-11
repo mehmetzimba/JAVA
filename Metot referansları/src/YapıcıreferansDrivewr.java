@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Function;
+
+
+public class YapıcıreferansDrivewr {
+public static void main(String[] args) {
+	
+	List<String> markalar= new ArrayList<>();
+	markalar.add("x marka");
+	markalar.add("y marka");
+	markalar.add("z marka");
+	
+	List<Bisiklet > bisikletler=markalar.stream().map(Bisiklet:: new).collect(Collectors.toList());
+
+     bisikletler.forEach(System.out::println);
+}
+
+}
